@@ -1,0 +1,333 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo container styles */
+.header-top {
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    height: 90px; /* Adjust as needed */
+    width: auto;
+}
+
+/* Header and navigation styles */
+header {
+    background: linear-gradient(45deg, #007bff, #6610f2);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+/* Navigation styles for home page only */
+.home-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: rgb(219, 13, 13); /* Background for navigation bar */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+
+/* Hero section */
+.hero {
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background: #28a745;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #218838;
+}
+
+/* Section styles */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Animation for hover effect */
+@keyframes buttonHover {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.btn:hover {
+    animation: buttonHover 0.5s ease-in-out;
+}
+
+
+/* About section styles */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.block {
+    flex: 1 1 calc(33.333% - 40px); /* 3 blocks per row with some spacing */
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.block h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.block p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.cta {
+    margin-top: 30px;
+}
+
+.cta p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Navigation styles */
+.home-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: white; /* Background for navigation bar */
+}
+
+.home-nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.home-nav ul li a {
+    color: #007bff; /* Blue color for navigation links */
+    text-decoration: none;
+    font-weight: normal;
+    padding: 10px 20px;
+    display: block;
+    transition: color 0.3s;
+}
+
+.home-nav ul li a:hover {
+    color: #0056b3; /* Darker blue for hover effect */
+}
+
+/* Dropdown styles */
+.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 300px;
+    box-shadow: 0 8px 16px rgb(149, 215, 235);
+    z-index: 1;
+    border-radius: 4px;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown .dropdown-content a {
+    color: #007bff;
+    padding: 9px 14px;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+}
+
+.dropdown .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* About section styles */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.block {
+    flex: 1 1 calc(33.333% - 40px); /* 3 blocks per row with some spacing */
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.block h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.block p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.cta {
+    margin-top: 30px;
+}
+
+.cta p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Societies section styles */
+.societies {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.societies h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.society {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.society h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.society p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-text {
+    animation: fadeIn 2s ease-in-out;
+}
